@@ -151,7 +151,7 @@ table tr:first-child th:last-child {
   border-top-right-radius: 15px;
 }
 
-table tr:last-child td:first-child {
+table tr:last-child th:first-child {
   border-bottom-left-radius: 15px;
 }
 
