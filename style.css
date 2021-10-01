@@ -23,6 +23,7 @@ body {
 #heading {
   background-color: var(--primary-heading-color);
   color: var(--primary-font-color);
+  width: 100%;
 }
 
 #heading #heading-text {
@@ -42,6 +43,7 @@ body {
   font-size: 1rem;
   padding: 10px 20px;
   margin: 5px;
+  width: auto;
   cursor: pointer;
 }
 
@@ -57,6 +59,8 @@ body {
   font-family: var(--primary-font);
   border: 2px solid var(--primary-heading-color);
   /* background-color: var(--primary-heading-color); */
+  max-width: 45%;
+  min-width: 45%;
   color: black;
   font-size: 1rem;
   padding: 10px 20px;
@@ -70,7 +74,7 @@ body {
   align-items: center;
   justify-content: center;
   /* width: 70%; */
-  margin: 30px;
+  margin: 25px;
   padding: 20px;
   background-color: var(--primary-font-color);
   border-radius: 20px;
@@ -97,13 +101,25 @@ body {
 .container-by-district {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+  flex-wrap: wrap;
+}
+
+.container-by-district-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 label {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
 }
 
 footer {

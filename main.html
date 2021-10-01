@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Vishnu Sivan" />
     <meta
@@ -20,23 +20,33 @@
     <div class="container">
       <div class="container-heading">Search slots</div>
       <div class="container-buttons" id="button-section">
-        <button autofocus class="search-type-button" id="btn-by-dist" style="width: 17%;">Search By District</button>
-        <button class="search-type-button" id="btn-by-pin" style="width: 17%;">Search By PIN</button>
+        <button autofocus class="search-type-button" id="btn-by-dist">Search By District</button>
+        <button class="search-type-button" id="btn-by-pin">Search By PIN</button>
       </div>
       <div class="container-by-district" id="search-by-district">
-        <label for="states-name" class="required">States</label>
-        <select class="search-type-dropdown" name="states-name" id="states-name"></select>
-        <label for="district-name" class="required">Districts</label>
-        <select class="search-type-dropdown" name="district-name" id="district-name"></select>
-        <label for="choose-date">Start Date</label>
-        <input class="search-type-dropdown" name="choose-date" id="choose-date" type="date" />
+        <div class="container-by-district-row">
+          <label for="states-name" class="required">States &nbsp;&nbsp;</label>
+          <select class="search-type-dropdown" name="states-name" id="states-name"></select>
+        </div>
+        <div class="container-by-district-row">
+          <label for="district-name" class="required">Districts</label>
+          <select class="search-type-dropdown" name="district-name" id="district-name"></select>
+        </div>
+        <div class="container-by-district-row">
+          <label for="choose-date">Start Date</label>
+          <input class="search-type-dropdown" name="choose-date" id="choose-date" type="date" />
+        </div>
         <button class="search-type-button" id="btn-check-district">Check Slots</button>
       </div>
-      <div id="search-by-pincode">
-        <label for="pin-code" class="required">Pin Code</label>
-        <input class="search-type-dropdown" type="number" name="pin-code" id="pin-code" placeholder="123456" />
-        <label for="choose-date-pin">Start Date</label>
-        <input class="search-type-dropdown" name="choose-date-pin" id="choose-date-pin" type="date" />
+      <div class="container-by-district" id="search-by-pincode">
+        <div class="container-by-district-row">
+          <label for="pin-code" class="required">Pin Code</label>
+          <input class="search-type-dropdown" type="number" name="pin-code" id="pin-code" placeholder="123456" />
+        </div>
+        <div class="container-by-district-row">
+          <label for="choose-date-pin">Start Date</label>
+          <input class="search-type-dropdown" name="choose-date-pin" id="choose-date-pin" type="date" />
+        </div>
         <button class="search-type-button" id="btn-check-pin">Check Slots</button>
       </div>
       <div id="output"></div>

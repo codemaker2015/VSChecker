@@ -260,11 +260,11 @@ btnCheckBasedOnPin.addEventListener('click', () => {
 });
 
 btnByDist.addEventListener('click', () => {
-  mainFunction('block', 'none', btnByDist, btnByPIN);
+  mainFunction('flex', 'none', btnByDist, btnByPIN);
 });
 
 btnByPIN.addEventListener('click', () => {
-  mainFunction('none', 'block', btnByPIN, btnByDist);
+  mainFunction('none', 'flex', btnByPIN, btnByDist);
 });
 
 const mainFunction = (
@@ -282,7 +282,7 @@ const mainFunction = (
   selectedValuesBasedonDistrict.selectedDate = '';
   selectedValuesBasedonPin.pinCode = '';
   selectedValuesBasedonPin.selectedDate = '';
-  if (dispValueOne === 'block' && dispValueTwo === 'none') {
+  if (dispValueOne === 'flex' && dispValueTwo === 'none') {
     listStates();
   }
   chooseDate.value = '';
@@ -292,4 +292,4 @@ const mainFunction = (
   tableData.innerHTML = '';
 };
 
-mainFunction('block', 'none', btnByDist, btnByPIN);
+mainFunction('flex', 'none', btnByDist, btnByPIN);
